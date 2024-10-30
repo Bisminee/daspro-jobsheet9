@@ -5,6 +5,7 @@ public class SearchNilai07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int key, hasil = 0, jumlahInput;
+        boolean penemuan = false;
 
         System.out.print("Masukkan banyaknya nilai yang ingin dimmasukkan: ");
         jumlahInput = sc.nextInt();
@@ -22,16 +23,19 @@ public class SearchNilai07 {
         for(int i = 0; i < arrNilai.length; i++){
             if(key == arrNilai[i]){
                 hasil = i;
-                System.out.println();
-                System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
-                System.out.println();
+                penemuan = true;
                 break;
             }else{
-                System.out.println("\nNilai tidak dapat ditemukan\n");
-                break;
+                penemuan = false;
             }
         }
 
-        
+        if(penemuan){
+            System.out.println();
+            System.out.println("Nilai " + key + " ketemu di indeks ke-" + hasil);
+            System.out.println();
+        }else{
+            System.out.println("Menu Tidak Tersedia");
+        }
     }
 }
