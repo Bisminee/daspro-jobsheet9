@@ -29,6 +29,7 @@ public class ArrayNilaiRata07 {
         rata2 = total/mhsLulus;
         rata2TidakLulus = totalTidakLulus/(jumlahMhs-mhsLulus);
         System.out.println("\nJumlah mahasiswa lulus = " + mhsLulus + " mahasiswa");
+        System.out.println("Jumlah mahasiswa tidak lulus = " +(jumlahMhs - mhsLulus) + "mahasiswa");
         System.out.println("Rata-rata nilai mahasiswa lulus = " + rata2);
         System.out.println("Rata-rata nilai tidak lulus = " + rata2TidakLulus);
         
