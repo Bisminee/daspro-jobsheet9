@@ -4,7 +4,7 @@ public class Tugas1_Jobsheet9_Array {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int jumlahMhs;
-        int mhsLulus = 0, nilaiTinggi = 0, nilaiRendah = 100;
+        int nilaiTinggi = 0, nilaiRendah = 100;
         double rata2, total = 0;
 
         System.out.print("Masukkan jumlah mahasiswa: ");
@@ -24,8 +24,17 @@ public class Tugas1_Jobsheet9_Array {
             total += nilaiMhs[i];
         }
 
+        System.out.println();
+        for(int i = 0; i < nilaiMhs.length; i++){
+            System.out.println("Nilai Mahasiswa ke-" + i + " adalah = " + nilaiMhs[i]);
+        }
+        System.out.println();
+
+
         rata2 = total/nilaiMhs.length;
-        System.out.println("\nJumlah mahasiswa lulus = " + mhsLulus + " mahasiswa");
         System.out.println("Rata-rata nilai = " + rata2);
+
+        System.out.println("Nilai tertinggi = " + nilaiTinggi);
+        System.out.println("Nilai terendah = " + nilaiRendah);
     }
 }
