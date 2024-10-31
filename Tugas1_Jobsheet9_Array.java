@@ -14,9 +14,11 @@ public class Tugas1_Jobsheet9_Array {
         for(int i = 0; i < nilaiMhs.length; i++){
             System.out.print("Masukkan nilai mahasiswa ke-" + (i+1) + " : ");
             nilaiMhs[i] = sc.nextInt();
+            sc.nextLine();
             if (nilaiMhs[i] > nilaiTinggi){
                 nilaiTinggi = nilaiMhs[i];
-            }else if(nilaiMhs[i] < nilaiRendah){
+            }
+            if(nilaiMhs[i] < nilaiRendah){
                 nilaiRendah = nilaiMhs[i];
             }
         }
@@ -26,7 +28,7 @@ public class Tugas1_Jobsheet9_Array {
 
         System.out.println();
         for(int i = 0; i < nilaiMhs.length; i++){
-            System.out.println("Nilai Mahasiswa ke-" + i + " adalah = " + nilaiMhs[i]);
+            System.out.println("Nilai Mahasiswa ke-" + (i+1) + " adalah = " + nilaiMhs[i]);
         }
         System.out.println();
 
